@@ -14,7 +14,7 @@
 
 		<div id="header">
 			<div class="container flex-column">
-				<h1 class="header-title">VS Code Snippet Creator</h1>
+				<h1 class="header-title">Snippet Creator</h1>
 				<div class="header-content flex">
 					<p class="header-subtitle">The easiest way to
 						<span>create snippets</span> for
@@ -36,12 +36,14 @@
 
 					<textarea name="snippetDescription" id="snippetDescription" placeholder="description"></textarea>
 					<textarea class="flex-grow-1" name="" id="snippetBody"></textarea>
-					<button id="tabStopBtn">Tab Stop</button>
+					<div id="snippeyBodyOptions">
+						<button id="tabStopBtn" class="button-icon">Tab Stop</button>
+					</div>
 				</div>
 
 			</div>
 			<div class="flex-column flex-grow-1">
-				<button id="copyBtn">Copy Snippet!</button>
+				<input type="button" id="copyBtn" value="Copy Snippet"></input>
 				<textarea id="formattedInput" rows="10" class="flex-grow-1"></textarea>
 			</div>
 		</div>

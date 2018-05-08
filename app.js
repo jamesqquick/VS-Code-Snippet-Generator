@@ -46,7 +46,6 @@ snippetDescription.addEventListener('keyup', updateSnippetOutput);
 snippetBody.addEventListener('keyup', updateSnippetOutput);
 
 tabStopBtn.addEventListener('click', e => {
-	console.log(snippetBody.selectionStart);
 	const start =
 		snippetBody.selectionStart !== 0
 			? snippetBody.selectionStart
@@ -61,6 +60,10 @@ tabStopBtn.addEventListener('click', e => {
 copyBtn.addEventListener('click', e => {
 	formattedInput.select();
 	document.execCommand('copy');
+	copyBtn.value = 'Snippet Copied!';
+	setTimeout(() => {
+		copyBtn.value = 'Copy Snippet';
+	}, 1000);
 });
 
 updateSnippetOutput();
