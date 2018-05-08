@@ -4,8 +4,9 @@ const snippetName = document.getElementById('snippetName');
 const snippetPrefix = document.getElementById('snippetPrefix');
 const snippetDescription = document.getElementById('snippetDescription');
 const copyBtn = document.getElementById('copyBtn');
+const tabStopBtn = document.getElementById('tabStopBtn');
 
-console.log('hello');
+let tabStops = 1;
 
 snippetName.value = 'name';
 snippetPrefix.value = 'prefix';
@@ -43,6 +44,19 @@ snippetPrefix.addEventListener('keyup', updateSnippetOutput);
 snippetDescription.addEventListener('keyup', updateSnippetOutput);
 
 snippetBody.addEventListener('keyup', updateSnippetOutput);
+
+tabStopBtn.addEventListener('click', e => {
+	console.log(snippetBody.selectionStart);
+	const start =
+		snippetBody.selectionStart !== 0
+			? snippetBody.selectionStart
+			: snippetBody.value.length - 1;
+	snippetBody.value =
+		snippetBody.value.substring(0, start) +
+		`$${tabStops}` +
+		snippetBody.value.substring(start, snippetBody.value.length);
+	tabStops++;
+});
 
 copyBtn.addEventListener('click', e => {
 	formattedInput.select();
