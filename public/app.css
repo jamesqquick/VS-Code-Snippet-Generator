@@ -1,0 +1,143 @@
+/* Variables */
+
+:root {
+	--main-color: #373475;
+	--gray: #f3f3f3;
+}
+
+/* Resets */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+body {
+	background-color: var(--gray);
+}
+
+#appContainer {
+	width: 100vw;
+	height: 100vh;
+}
+
+#mainContent {
+	padding: 25px;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+/* Title Bar */
+#header {
+	height: 100px;
+	background-color: var(--main-color);
+	color: white;
+}
+
+#header .container {
+	height: 100%;
+	justify-content: center;
+}
+
+.header-title {
+	font-weight: 500;
+}
+
+.header-subtitle span {
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.header-content {
+	justify-content: space-between;
+}
+
+/* Flexbox */
+.flex {
+	display: flex;
+}
+
+.flex-grow-1 {
+	flex: 1;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+p {
+	font-weight: 300;
+}
+
+a {
+	font-weight: 500;
+}
+
+input,
+textarea {
+	padding: 10px 15px;
+	font-size: 14px;
+	margin: 2px;
+}
+
+input:focus,
+textarea:focus {
+	box-shadow: 0 0 2px var(--main-color);
+	outline: none;
+	border: 1px solid transparent;
+}
+
+input {
+	height: 50px;
+}
+
+textarea {
+	resize: none;
+}
+
+button,
+input[type='button'] {
+	height: 50px;
+	background-color: var(--main-color);
+	color: white;
+	font-size: 16px;
+	border: 1px solid var(--main-color);
+	transition: background-color 100ms;
+}
+button:hover,
+input[type='button']:hover {
+	cursor: pointer;
+	background-color: white;
+	color: var(--main-color);
+}
+
+button:focus,
+input[type='button']:focus {
+	outline: none;
+	height: auto;
+}
+
+.button-icon {
+	font-size: 10px;
+	padding: 5px;
+	align-self: flex-start;
+	height: auto;
+}
+
+#snippeyBodyOptions {
+	margin-top: -30px;
+	margin-left: 5px;
+}

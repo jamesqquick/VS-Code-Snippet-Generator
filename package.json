@@ -1,0 +1,35 @@
+{
+  "name": "vs-code-snippet-generator",
+  "version": "1.0.0",
+  "description": "Application for creating code snippets for VS Code",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesqquick/VS-Code-Snippet-Generator.git"
+  },
+  "keywords": [
+    "VS",
+    "Code",
+    "Visual",
+    "Studio",
+    "Code",
+    "Javascript",
+    "ES6",
+    "CSS",
+    "Flexbox",
+    "HTML5"
+  ],
+  "author": "James Q Quick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesqquick/VS-Code-Snippet-Generator/issues"
+  },
+  "homepage": "https://github.com/jamesqquick/VS-Code-Snippet-Generator#readme"
+}

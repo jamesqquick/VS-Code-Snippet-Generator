@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>VS Code Snippet Generator</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+	<div id="appContainer" class="flex-column">
+
+		<div id="header">
+			<div class="container flex-column">
+				<h1 class="header-title">Snippet Creator</h1>
+				<div class="header-content flex">
+					<p class="header-subtitle">The easiest way to
+						<span>create snippets</span> for
+						<span>VS Code!</span>
+					</p>
+					<p>View on
+						<a href="https://github.com/jamesqquick/VS-Code-Snippet-Generator">Github</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="mainContent" class="flex flex-grow-1">
+			<div id="snippetInputs" class="flex-column flex-grow-1">
+				<div class="flex">
+					<input class="flex-grow-1" type="text" name="snippetName" id="snippetName" placeholder="name">
+					<input class="flex-grow-1" type="text" name="snippetPrefix" id="snippetPrefix" placeholder="prefix">
+				</div>
+				<div class="flex-column flex-grow-1">
+
+					<textarea name="snippetDescription" id="snippetDescription" placeholder="description"></textarea>
+					<textarea class="flex-grow-1" name="" id="snippetBody"></textarea>
+					<div id="snippeyBodyOptions">
+						<button id="tabStopBtn" class="button-icon">Tab Stop</button>
+					</div>
+				</div>
+
+			</div>
+			<div class="flex-column flex-grow-1">
+				<input type="button" id="copyBtn" value="Copy Snippet"></input>
+				<textarea id="formattedInput" rows="10" class="flex-grow-1"></textarea>
+			</div>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+
+</html>
